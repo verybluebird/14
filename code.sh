@@ -1,7 +1,7 @@
 1) Change config file: sudo nano /etc/inetd.conf
 2) Input 2 string in the end: 
 # HTTP proxy
-1060 dgram udp wait nobody usr/bin/nc echo -n "foo" | nc -u -w1 localhost 1065
+1060 dgram udp wait nobody usr/bin/nc echo -n "foo" | nc -u localhost 1065
 3) Save file and exit.
 4) Open two terminals:
 in the first input:sudo nc -l localhost 1065
